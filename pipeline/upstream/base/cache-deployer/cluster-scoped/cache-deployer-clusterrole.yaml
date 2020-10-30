@@ -22,3 +22,11 @@ rules:
   verbs:
   - create
   - get
+- apiGroups:
+  - certificates.k8s.io
+  resourceNames:
+  - kubernetes.io/*
+  resources:
+  - signers
+  verbs:
+  - approve
